@@ -1520,7 +1520,7 @@ fail.</p>
 <p>Please make sure to keep your go.sum file up to date, perhaps by incorporating
 the <code>go mod tidy</code> command in your dev workflow.</p>
 <h3 id="go-toolchain-version">Go toolchain version<a class="headerlink" href="#go-toolchain-version" title="Permanent link">&para;</a></h3>
-<p>Current version: 1.26</p>
+<p>Current version: 1.27</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Hermeto expects to use a specific version of the <code>go</code> command when downloading
@@ -1606,7 +1606,7 @@ becomes a requirement in the future.</p>
 </code></pre></div>
 <h4 id="write-the-dockerfile">Write the Dockerfile<a class="headerlink" href="#write-the-dockerfile" title="Permanent link">&para;</a></h4>
 <p>As mentioned in the steps above, the only change that needs to be made in the
-Dockerfile or Dockerfile is to source the environment file before building
+Dockerfile is to source the environment file before building
 the binary.</p>
 <div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.19.2-alpine3.16</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">build</span>
 
