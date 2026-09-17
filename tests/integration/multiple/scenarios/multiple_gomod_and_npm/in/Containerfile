@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi10@sha256:be840bb76e74900d39d5e4620c184e89382dcfce09cb05c98b4e1246d55612a5
+FROM registry.access.redhat.com/ubi10@sha256:6e3f045f5380e8d8dffaea7e01bf926d2db44aff751048697e780d1253687843
 
 # Test disabled network access
 RUN if getent hosts www.google.com; then echo "Has network access!"; exit 1; fi
